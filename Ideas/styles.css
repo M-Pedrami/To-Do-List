@@ -20,10 +20,11 @@ section {
 }
 .header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: aquamarine;
-  padding: 4rem;
+  padding: 2rem;
   position: relative;
   box-shadow: 1px 1px 10px black;
   border-top-right-radius: 40px;
@@ -35,12 +36,24 @@ section {
 .header i {
   font-size: 2rem;
 }
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
 
 #addTask{
-  position: absolute;
   bottom: 0;
   right: 290px;
   font-size: 1.5rem;
+}
+
+.header button{
+  border: none;
+  background-color: transparent;
+  padding-top: 30px;
+
 }
 
 .taskInput{
