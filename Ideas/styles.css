@@ -15,8 +15,7 @@ section {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
-  position: absolute;
-  box-shadow: 1px 1px 10px black;
+ 
   opacity: 0.9;
 }
 .header {
@@ -25,8 +24,12 @@ section {
   align-items: center;
   background-color: aquamarine;
   padding: 4rem;
-  
-  
+  position: relative;
+  box-shadow: 1px 1px 10px black;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .header i {
@@ -35,9 +38,30 @@ section {
 
 #addTask{
   position: absolute;
-  bottom: 300px;
+  bottom: 0;
   right: 290px;
   font-size: 1.5rem;
+}
+
+.taskInput{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 2rem;
+  position: relative;
+  margin-top: 15px;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 10px;
+  background-color: lightgray;
+  opacity: 0.95;
+}
+.form-control {
+  font-size: 1.35rem;
+}
+.form-control:focus{
+  box-shadow: none;
+  border-color: gray;
+  
 }
 
 .task, .task2, .task3{
@@ -45,11 +69,22 @@ section {
   justify-content: space-between;
   align-items:center;
   padding: 2rem;
+  position: relative;
+  margin-top: 15px;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 10px;
 
+}
+
+#changeBg {
+ position: absolute;
+ top: 0;
+ right: 7px;
 }
 
 .task{
   background-color: beige;
+  position: relative;
 }
 .task2 {
   background-color: lightblue;
