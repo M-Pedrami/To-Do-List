@@ -1,0 +1,76 @@
+h1, h3, h5 {
+  margin: 0;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+section {
+  border: solid red 1px;
+  width: 600px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  position: absolute;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aquamarine;
+  padding: 4rem;
+  
+}
+
+.header i {
+  font-size: 2rem;
+}
+
+#addTask{
+  position: absolute;
+  bottom: 300px;
+  right: 290px;
+  font-size: 1.5rem;
+}
+
+.task, .task2, .task3{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 2rem;
+
+}
+
+.task{
+  background-color: beige;
+}
+.task2 {
+  background-color: lightblue;
+}
+.task3 {
+  background-color: lightpink;
+}
+
+
+.taskTitle{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.taskTitle i{
+  font-size: 1.5rem;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.icons i{
+  font-size: 1.25rem;
+}
