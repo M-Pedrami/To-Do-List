@@ -20,7 +20,7 @@ const hideInput = () => {
 const creatTask = () =>{
 // creating an array of colors and a random number generator for the div.task background. the array can be easily extended without having to change any other part of the code. ❗❗❗❗ first I created the following two variables in the global scope. It lead to a problem that a random color would have selected once and then used for every other newTask generated within the creatTask function. I had to move the to the function scope for it to work as it was intended to ❗❗❗❗. ⚠⚠⚠⚠ MUST use let to assign randomIndex because we want to be abale to reassign its value below(look here:👀) when we press the pallette button. Remember pressing the palette button happens in the same👈❗ iteration as the newTask div is created so if we use const to assign a value, the value cannot be change within the same iteration. the reason it changes for a new newTask div is that by click the add input button we fire another👈❗ iteration of the creatTask function.
 
-const colors = ["#3399FF","#F4F1DE", "#e07a5f", "#3D405B", "#81B29A", "#F2CC8F" ]
+const colors = ["#3399FF","#F4F1DE", "#e07a5f", "#3D405B", "#81B29A", "#F2CC8F", "#6D597A", "#E56B6F", "#B56576", "#F0F66E", "#A8C686", "#E8D7F1", "#D1F5BE", "#23F0C7", "#0267C1", "#D6FF79"  ]
 let randomIndex = Math.floor(Math.random() * colors.length)
 
 //creating the elements that constitute a task and giving them classes and Ids that will be targeted via css(predefined)
