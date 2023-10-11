@@ -126,6 +126,15 @@ section {
   font-size: 1.5rem;
 }
 
+.taskTitle h5{
+  text-decoration: none;
+  
+}
+
+.taskTitle i:hover{
+  cursor: pointer;
+}
+
 .icons{
   display: flex;
   justify-content: space-between;

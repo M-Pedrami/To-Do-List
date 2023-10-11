@@ -41,7 +41,7 @@ const taskTitle = document.createElement("div")
 taskTitle.classList.add("taskTitle")
 
 const checkBox = document.createElement("i")
-checkBox.classList.add("bi", "bi-check-square")
+checkBox.classList.add("bi", "bi-square")
 
 const taskName = document.createElement("h5")
 taskName.innerText = inputValue
@@ -76,9 +76,24 @@ inputBox.value = ""
 trash.addEventListener("click", ()=> newTask.remove())
 alarm.addEventListener("click", () => alert("⏰When Should We Remind You?⏰")
 )
+
+//the event listener to change the newTask div background
 changeBgBtn.addEventListener("click",()=>{  
 randomIndex = Math.floor(Math.random() * colors.length)//👀👀  
 newTask.style.backgroundColor = colors[randomIndex] })
+
+// the event listener to change the empty square icon to checksquare icon 
+checkBox.addEventListener ("click", () => {
+  if (checkBox.classList.contains("bi-square") && taskName.style.textDecoration === "none")
+  {
+  checkBox.classList.replace ("bi-square", "bi-check-square")
+  taskName.style.textDecoration = "line-through"
+  }
+  else {
+    checkBox.classList.replace ("bi-check-square", "bi-square")
+    taskName.style.textDecoration = "none"
+  }
+})
 
 
 
