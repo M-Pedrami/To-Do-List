@@ -67,6 +67,7 @@ section {
   border-radius: 10px;
   background-color: lightgray;
   opacity: 0.95;
+  display: none;
 }
 .form-control {
   font-size: 1.35rem;
