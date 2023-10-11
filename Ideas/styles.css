@@ -1,21 +1,26 @@
 h1, h3, h5 {
   margin: 0;
 }
+body{
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 37%, rgba(252,70,107,1) 100%);
+}
 main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  margin-top: 25%; /* added margin-top so the app will always be displayed in the middle */
+   /* I set the height manually so that when the section expands as a reult of many new divs, it will still have room for those newly created divs, otherwise then background would only cover until the given height. A workaround would be to apply the background to the body which I did below :) */
   width: 100%;
-  background: rgb(63,94,251);
-  background: radial-gradient(circle, rgba(63,94,251,1) 37%, rgba(252,70,107,1) 100%);
+  /* background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 37%, rgba(252,70,107,1) 100%); */
 }
 section {
   width: 600px;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
- 
+  margin-bottom: 25%; /*added margin so that the app will always have margin from bottom*/
   opacity: 0.9;
 }
 .header {
@@ -96,6 +101,10 @@ section {
  right: 7px;
 }
 
+#changeBg:hover {
+  cursor: pointer;
+}
+
 .task{
   background-color: beige;
   position: relative;
@@ -126,4 +135,7 @@ section {
 
 .icons i{
   font-size: 1.25rem;
+}
+.icons i:hover{
+  cursor: pointer;
 }
